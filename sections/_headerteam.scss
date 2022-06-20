@@ -1,0 +1,230 @@
+a{
+    text-decoration: none;
+    transition: all 0.3s linear;
+    &:hover{
+        color: #F0145A;
+    }
+}
+.header-team{
+
+width: 100%;
+}
+
+.header-team-head{
+
+    @media screen and (min-width: 1024px){
+        display: grid;
+        height: 114px;
+        
+        grid-template-columns: 254px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "header-services header-contacts"
+        "header-services header-nav" ;
+        margin: 0 60px 0;
+        align-items: start;
+        justify-items: end;
+        
+     }
+     @media screen and (min-width: 1920px){
+        margin: 0 160px 0;
+       }
+
+   &__top-menu{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       margin: 0 auto;
+       padding: 10px 15px ;
+       background-color:#F5F5FA ;
+
+       @media screen and (min-width: 768px){
+             
+        background-color: unset;
+        width: 478px;
+        padding: unset;
+        align-items: center;
+        margin: 50px 0 30px 60px;
+      }
+      @media screen and (min-width: 1024px){
+        grid-area:header-contacts ;
+       margin-left: unset;
+       margin: 50px 0 0;
+
+      }
+       
+
+       &_lang{
+         width: 99px;
+         display: flex;
+         justify-content: space-around;
+        &_link{
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 700;
+            color: #B3B3BA;
+            text-align: center;
+
+            &:focus{
+                background-color: #F0145A;
+                padding: 5px 7px;
+                width: 33px;
+                border-radius: 8px;
+                outline: none;
+            }
+        }
+       }
+       &_text{
+        font-size: 16px;
+        line-height: 20px;
+        color: #B3B3BA;
+        display: none; 
+
+        @media screen and (min-width: 768px){
+           display: unset;
+          }
+       }
+       &_link{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #B3B3BA;
+       }
+       &_img{
+         display: none;
+
+         @media screen and (min-width: 768px){
+            display: unset;
+         }
+
+        &-svg:hover{
+          stroke: #F0145A;
+        }
+       }
+   } 
+
+   &__logo-box{
+       display: flex;
+       justify-content: space-between;
+       width: 92%;
+       margin: 0 auto;
+       padding: 12px 0 0;
+       @media screen and (min-width: 768px){
+       width: unset;
+       margin: 0 0 30px 60px;
+       padding: unset;
+     }
+     @media screen and (min-width: 1024px){
+        grid-area:header-services ;
+        margin: 50px 0 0;
+        
+        
+      }
+
+      &_left{
+          display: flex;
+        @media screen and (min-width: 768px){
+            width: 254px;
+            
+            
+         }
+         
+        &_img{
+            @media screen and (min-width: 768px){
+                width: 130px;
+                
+             } 
+            
+        }
+        &_slash{
+            height: 26px;
+            @media screen and (min-width: 768px){
+                height: 47px; 
+             }
+        }
+        &_link{
+            font-size: 20px;
+            line-height: 24px;
+            
+            color: #323264;
+            @media screen and (min-width: 768px){
+                font-size: 36px;
+               line-height: 44px;
+               
+             }
+        }
+      }
+      
+      &_svg{
+        @media screen and (min-width: 768px){
+          display: none;
+           
+         }
+      }
+      
+   }
+
+   &__nav{
+       display: none;
+
+       @media screen and (min-width: 768px){
+        display: unset;
+        margin: 0 0 0 60px;
+
+       } 
+       @media screen and (min-width: 1024px){
+        grid-area:header-nav ;
+        margin: 16px 0 0;
+       }
+
+    &_link{
+        font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: #24A3FF;
+            
+
+            &:hover{
+                color: #F0145A;
+                text-decoration: underline;
+                text-underline-offset: 5px;
+            }
+
+        & + .header-team-head__nav_link{
+            margin-left: 15px;
+        }
+    }
+   }
+}
+.header-team-hero{
+    padding: 30px;
+
+    @media screen and (min-width: 768px){
+        padding: 60px 0;
+         
+       }
+
+    &__text{
+        font-size: 30px;
+        line-height: 37px;
+        font-weight: 700;
+       @extend %liniarGradient ;
+
+       @media screen and (min-width: 768px){
+        width: 84.375%;
+        margin: 0 auto;
+        font-size: 38px;
+        line-height: 46px;
+         
+       }
+
+       @media screen and (min-width: 1024px){
+        width: 64.84375%;
+       }
+       @media screen and (min-width: 1440px){
+        width: 75%;
+       }
+       @media screen and (min-width: 1920px){
+        width: 70.833333%;
+       }
+    }
+}

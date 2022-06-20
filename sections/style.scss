@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+@import "../sections/header";
+
+@import "../sections/team";
+@import "../sections/clients";
+@import "../sections/recommended";
+@import "../sections/footer";
+
+%liniarGradient {
+    background: linear-gradient(90.13deg,#F0145A  0%,#EF8080  99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+a {
+    transition: all 0.3s linear;
+}
+a:hover{
+    color: #F0145A;
+   
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+@import "../sections/headerteam";
+@import "../sections/teamteam";
+@import "../sections/footerteam";
+/*<img src="./images/Facebook-Header.svg" alt="logo" class="header-contacts__img ">*/
+

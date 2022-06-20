@@ -1,0 +1,95 @@
+.team{
+    width: 100%;
+    margin-bottom: 60px;
+
+    &__img-slider{
+        display: inline-block;
+       position: relative;
+        left: 50%;
+        margin-left: -39px;
+       
+        
+    }
+}
+
+.team-container{
+    width: 84%;
+    margin: 30px auto;
+    background: #F5F5FA;
+    border-radius: 12px;
+
+    @media screen and (min-width: 768px){
+        margin: 60px auto 30px;
+        width: 84.375%;
+    }
+    @media screen and (min-width: 1024px){
+      margin: 60px auto 30px;
+      width: 88.28125%;
+      display: flex;
+  }
+  @media screen and (min-width: 1440px){
+    
+    width: 91.666667%;
+  }
+  @media screen and (min-width: 1920px){
+    width: 83.333333%;
+
+}
+
+    &__img{
+        width: 100%;
+
+        
+        @media screen and (min-width: 1024px){
+         width: 400px;
+      }
+    }
+
+
+    &__content{
+      width: 80.952381%;
+      margin: 0 auto;
+      padding: 30px 0;
+      @media screen and (min-width: 1024px){
+        padding: 30px;
+     }
+
+      &_link{
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: 700;
+          text-decoration: none;
+          color: #24A3FF;
+          text-transform: uppercase;
+      }
+
+      &_text{
+          margin: 5px 0 30px;
+          font-size: 30px;
+          line-height: 37px;
+          font-weight: 700;
+          @extend %liniarGradient;
+
+          @media screen and (min-width: 768px){
+            font-size: 38px;
+          line-height: 46px;
+        }
+        
+       
+      }
+
+      &_name{
+          margin-bottom: 6px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #B3B3BA;
+      }
+
+      &_post{
+        font-size: 14px;
+        line-height: 22px;
+        color: #B3B3BA;
+      }
+    }
+}
